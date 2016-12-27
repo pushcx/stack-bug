@@ -21,3 +21,11 @@
     Failed, modules loaded: none.
     λ> 
 
+---
+
+Thanks to [Christopher Allen](https://twitter.com/bitemyapp) for pointing the way towards a fix.
+
+You can work around the bug by re-including the current directory:
+
+    $ stack ghci --ghci-options -i.
+
